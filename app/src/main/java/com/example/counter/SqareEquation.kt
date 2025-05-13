@@ -21,9 +21,10 @@ class SqareEquation : AppCompatActivity() {
         setContentView(binding.root)
         with(binding){
             btAnswer.setOnClickListener {
-                val A = etA.text.toString().toFloat()
-                val B = etB.text.toString().toFloat()
-                val C = etC.text.toString().toFloat() - etY.text.toString().toFloat()
+                val A = if (etA.text.isNotEmpty()) etA.text.toString().toFloat() else 1F
+                val B = if (etB.text.isNotEmpty()) etB.text.toString().toFloat()  else 1F
+                val y = if (etY.text.isNotEmpty()) etY.text.toString().toFloat()  else 0F
+                val C = if (etC.text.isNotEmpty()) etC.text.toString().toFloat()  else 1F  - y
 
                 val D = (B*B - 4*A*C)
 

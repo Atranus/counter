@@ -7,84 +7,100 @@
     android:layout_height="match_parent"
     tools:context=".SqareEquation">
 
-    <EditText
-        android:id="@+id/et_a"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberDecimal|numberSigned"
-        android:hint="A"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.045"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.049" />
-
-    <EditText
-        android:id="@+id/et_b"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberDecimal|numberSigned"
-        android:hint="B"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.33"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.049" />
-
-    <EditText
-        android:id="@+id/et_c"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberDecimal|numberSigned"
-        android:hint="C"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.598"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.049" />
-
-    <EditText
-        android:id="@+id/et_y"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberDecimal|numberSigned"
-        android:hint="y"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.954"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.049" />
-
     <TextView
         android:id="@+id/tv_answer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ответ"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="52dp"
+        android:hint="Ответ"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.093"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.586" />
+        app:layout_constraintTop_toBottomOf="@+id/bt_answer"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/bt_answer"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
         android:text="Решить"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.175"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.365" />
+        tools:layout_editor_absoluteX="0dp">
+
+        <EditText
+            android:id="@+id/et_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="A"
+            android:inputType="numberDecimal|numberSigned"
+            android:minWidth="40dp"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x²+"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/et_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="B"
+            android:inputType="numberDecimal|numberSigned"
+            android:minWidth="40dp"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x+"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/et_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="C"
+            android:inputType="numberDecimal|numberSigned"
+            android:minWidth="40dp"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="="
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/et_y"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:hint="0"
+            android:inputType="numberDecimal|numberSigned"
+            android:minWidth="40dp"
+            android:textSize="30dp" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
