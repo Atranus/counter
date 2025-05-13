@@ -7,6 +7,10 @@ android {
     namespace = "com.example.counter"
     compileSdk = 35
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.example.counter"
         minSdk = 28
