@@ -27,7 +27,7 @@
                 android:id="@+id/btn_sqare_equation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="12dp"
                 android:layout_marginHorizontal="5dp"
                 android:layout_marginBottom="0dp"
                 android:text="Квадратное уравнение" />
@@ -40,6 +40,15 @@
                 android:layout_marginHorizontal="5dp"
                 android:layout_marginBottom="0dp"
                 android:text="Биквадратное уравнение" />
+
+            <Button
+                android:id="@+id/btn_modul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="0dp"
+                android:text="Взятие по модулю" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

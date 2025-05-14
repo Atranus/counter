@@ -23,7 +23,9 @@ class MainActivity : AppCompatActivity() {
             btnBisqareEquation.setOnClickListener {
                 startActivity(Intent(this@MainActivity,BisqareEquation::class.java))
             }
-
+            btnModul.setOnClickListener {
+                startActivity(Intent(this@MainActivity,Modul::class.java))
+            }
         }
     }
 }
