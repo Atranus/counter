@@ -20,7 +20,9 @@ class MainActivity : AppCompatActivity() {
             btnSqareEquation.setOnClickListener {
                 startActivity(Intent(this@MainActivity,SqareEquation::class.java))
             }
-
+            btnBisqareEquation.setOnClickListener {
+                startActivity(Intent(this@MainActivity,BisqareEquation::class.java))
+            }
 
         }
     }
