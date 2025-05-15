@@ -7,18 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".SqareEquation">
 
-    <TextView
-        android:id="@+id/tv_answer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="52dp"
-        android:hint="Ответ"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_answer"
-        app:layout_constraintVertical_bias="0.0" />
+
 
     <Button
         android:id="@+id/bt_answer"
@@ -101,6 +90,150 @@
             android:inputType="numberDecimal|numberSigned"
             android:minWidth="40dp"
             android:textSize="30dp" />
+    </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/bt_answer"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:id="@+id/d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:visibility="gone"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D = "
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/d_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" = "
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/x1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:visibility="gone"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/x1_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X₁ = "
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="64dp"
+                tools:layout_editor_absoluteY="380dp">
+
+                <TextView
+                    android:id="@+id/x1_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="T"
+                    android:textSize="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/x1_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/x1_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" = "
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/x2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:visibility="gone"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X₂ = "
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="64dp"
+                tools:layout_editor_absoluteY="380dp">
+
+                <TextView
+                    android:id="@+id/x2_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="T"
+                    android:textSize="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/x2_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/x2_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" = "
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:visibility="gone"
+            android:textSize="25dp"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

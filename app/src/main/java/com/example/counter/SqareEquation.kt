@@ -1,6 +1,7 @@
 package com.example.counter
 
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -28,12 +29,38 @@ class SqareEquation : AppCompatActivity() {
 
                 val D = (B*B - 4*A*C)
 
-                
+                x1.setVisibility(View.GONE)
+                x1Lable.text = "X₁ = "
+                x2.setVisibility(View.GONE)
+                d.setVisibility(View.GONE)
+                tvAnswer.setVisibility(View.GONE)
+
+                d.setVisibility(View.VISIBLE)
+                dAnswer.text = " $B² - 4($A)($C) = $D"
                 
                 when {
-                    (D > 0F) -> tvAnswer.text = "X1 = ${((-B)+ sqrt(D))/(2*A)}\nX2 = ${((-B)- sqrt(D))/(2*A)}"
-                    (D == 0F) -> tvAnswer.text = "X1 = ${((-B))/(2*A)}"
-                    (D < 0F) -> tvAnswer.text = "Корней нет"
+                    (D > 0F) -> {
+                        x1Up.text = "${(-B)} + ${sqrt(D)}"
+                        x1Down.text = "${(2 * A)}"
+                        x1Answer.text = " = ${((-B) + sqrt(D)) / (2 * A)}"
+                        x2Up.text = "${(-B)} - ${sqrt(D)}"
+                        x2Down.text = "${(2 * A)}"
+                        x2Answer.text = " = ${((-B) - sqrt(D)) / (2 * A)}"
+
+                        x1.setVisibility(View.VISIBLE)
+                        x2.setVisibility(View.VISIBLE)
+                    }
+                    (D == 0F) -> {
+                        x1Lable.text = "X = "
+                        x1Up.text = "${(-B)}"
+                        x1Down.text = "${(2 * A)}"
+                        x1Answer.text = " = ${(-B) / (2 * A)}"
+                        x1.setVisibility(View.VISIBLE)
+                    }
+                    (D < 0F) -> {
+                        tvAnswer.setVisibility(View.VISIBLE)
+                        tvAnswer.text = "Корней нет"
+                    }
                 }
             }
         }

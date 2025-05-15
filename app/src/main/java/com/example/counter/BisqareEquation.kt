@@ -1,6 +1,7 @@
 package com.example.counter
 
 import android.os.Bundle
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -27,19 +28,116 @@ class BisqareEquation : AppCompatActivity() {
 
                 val D = (B*B - 4*A*C)
 
+                x12.setVisibility(View.GONE)
+                x12Side.setVisibility(View.GONE)
+                x12Side.text = "---"
+                x12Lable.text = "X₁₂² = "
+                x34.setVisibility(View.GONE)
+                x34Side.setVisibility(View.GONE)
+                x34Side.text = "---"
+                x34Lable.text = "X₃₄² = "
+                x1.setVisibility(View.GONE)
+                x1.text = "X₁ = "
+                x2.setVisibility(View.GONE)
+                x2.text = "X₂ = "
+                x3.setVisibility(View.GONE)
+                x3.text = "X₃ = "
+                x4.setVisibility(View.GONE)
+                x4.text = "X₄ = "
+                d.setVisibility(View.GONE)
+                tvAnswer.setVisibility(View.GONE)
+
+                d.setVisibility(View.VISIBLE)
+                dAnswer.text = " $B² - 4($A)($C) = $D"
+
                 when {
                     (D > 0F) -> {
-                        var ancwer =""
+                        x12Up.text = "${(-B)} + ${sqrt(D)}"
+                        x12Down.text = "${(2 * A)}"
+                        x12Answer.text = " = ${((-B) + sqrt(D)) / (2 * A)}"
+                        x12.setVisibility(View.VISIBLE)
+                        x12Side.setVisibility(View.VISIBLE)
 
-                        if ((((-B) + sqrt(D)) / (2 * A))>=0) {ancwer += "X1 = ${sqrt(((-B) + sqrt(D)) / (2 * A))}\n" + "X2 = ${-sqrt(((-B) + sqrt(D)) / (2 * A))}\n"}
-                        if ((((-B) - sqrt(D)) / (2 * A))>=0) {ancwer += "X3 = ${sqrt(((-B) - sqrt(D)) / (2 * A))}\n" + "X4 = ${-sqrt(((-B) - sqrt(D)) / (2 * A))}"}
+                        val X12 = ((-B) + sqrt(D)) / (2 * A)
+                        when{
+                            (X12 > 0F) -> {
 
-                        tvAnswer.text = ancwer
+                                x12Side.text = "      ┏\n => ┃\n      ┗"
+                                x1.setVisibility(View.VISIBLE)
+                                x1.text = "X₁ = ${sqrt(X12)}"
+                                x2.setVisibility(View.VISIBLE)
+                                x2.text = "X₂ = ${-sqrt(X12)}"
+                            }
+                            (X12 == 0F) -> {
+                                x12Side.text = " => "
+                                x1.setVisibility(View.VISIBLE)
+                                x1.text = "X₁ = ${sqrt(X12)}"
+                            }
+                            (X12 < 0F) -> {
+                                x12Side.text = " => ⌀"
+                            }
+                        }
+
+                        x34Up.text = "${(-B)} - ${sqrt(D)}"
+                        x34Down.text = "${(2 * A)}"
+                        x34Answer.text = " = ${((-B) - sqrt(D)) / (2 * A)}"
+                        x34.setVisibility(View.VISIBLE)
+                        x34Side.setVisibility(View.VISIBLE)
+
+                        val X34 = ((-B) - sqrt(D)) / (2 * A)
+                        when{
+                            (X34 > 0F) -> {
+                                x34Side.text = "      ┏\n => ┃\n      ┗"
+                                x3.setVisibility(View.VISIBLE)
+                                x3.text = "X₃ = ${sqrt(X34)}"
+                                x4.setVisibility(View.VISIBLE)
+                                x4.text = "X₄ = ${-sqrt(X34)}"
+                            }
+                            (X34 == 0F) -> {
+                                x34Side.text = " => "
+                                x3.setVisibility(View.VISIBLE)
+                                x3.text = "X₃ = ${sqrt(X34)}"
+                            }
+                            (X34 < 0F) -> {
+                                x34Side.text = " => ⌀"
+                            }
+                        }
                     }
-                    (D == 0F) -> if(((-B)) / (2 * A)>=0){
-                        tvAnswer.text = "X1 = ${sqrt(((-B)) / (2 * A))}\nX2 = ${-sqrt(((-B)) / (2 * A))}"
+                    (D == 0F) -> {
+                        x12Up.text = "${(-B)}"
+                        x12Down.text = "${(2 * A)}"
+                        x12Answer.text = " = ${(-B) / (2 * A)}"
+                        x12.setVisibility(View.VISIBLE)
+                        x12Side.setVisibility(View.VISIBLE)
+
+                        val X12 = (-B) / (2 * A)
+                        when{
+                            (X12 > 0F) -> {
+                                x1.setVisibility(View.VISIBLE)
+                                x1.text = "X₁ = ${sqrt(X12)}"
+                                x2.setVisibility(View.VISIBLE)
+                                x2.text = "X₂ = ${-sqrt(X12)}"
+                            }
+                            (X12 == 0F) -> {
+                                x12Side.text = " => "
+                                x1.text = "X₁ = ${sqrt(X12)}"
+                            }
+                            (X12 < 0F) -> {
+                                x12Side.text = " => ⌀"
+                            }
+                        }
                     }
-                    (D < 0F) -> tvAnswer.text = "Корней нет"
+                    (D < 0F) -> {
+                        tvAnswer.setVisibility(View.VISIBLE)
+                        tvAnswer.text = "Корней нет"
+                    }
+                }
+                if (((x12Side.text == " => ⌀") && (x34Side.text == " => ⌀")) or
+                    ((x12Side.text == "---") && (x34Side.text == " => ⌀")) or
+                    ((x12Side.text == " => ⌀") && (x34Side.text == "---")))
+                {
+                    tvAnswer.setVisibility(View.VISIBLE)
+                    tvAnswer.text = "Корней нет"
                 }
             }
         }
