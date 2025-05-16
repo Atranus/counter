@@ -2,6 +2,7 @@ package com.example.counter
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -25,6 +26,26 @@ class MainActivity : AppCompatActivity() {
             }
             btnModul.setOnClickListener {
                 startActivity(Intent(this@MainActivity,Modul::class.java))
+            }
+
+            btnPosob.setOnClickListener {
+                if (llPosob.visibility == View.GONE) {
+                    btnPosob.text = "∧ Формулы по теории вероятности"
+                    llPosob.setVisibility(View.VISIBLE)
+                }
+                else{
+                    btnPosob.text = "∨ Формулы по теории вероятности"
+                    llPosob.setVisibility(View.GONE)
+                }
+            }
+            btnPosobBinom.setOnClickListener {
+                startActivity(Intent(this@MainActivity,PosobBinomP::class.java))
+            }
+            btnPosobGeom.setOnClickListener {
+                startActivity(Intent(this@MainActivity,PosobGeomP::class.java))
+            }
+            btnPosobPuass.setOnClickListener {
+                startActivity(Intent(this@MainActivity,PosobPuassP::class.java))
             }
         }
     }

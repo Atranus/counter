@@ -50,6 +50,52 @@
                 android:layout_marginHorizontal="5dp"
                 android:layout_marginBottom="0dp"
                 android:text="Взятие по модулю" />
+
+            <Button
+                android:id="@+id/btn_posob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="0dp"
+                android:text="∨ Формулы по теории вероятности" />
+
+            <LinearLayout
+                android:id="@+id/ll_posob"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_marginHorizontal="45dp">
+
+                <Button
+                    android:id="@+id/btn_posob_binom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="0dp"
+                    android:text="Биномиальное распределение" />
+
+                <Button
+                    android:id="@+id/btn_posob_geom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="0dp"
+                    android:text="Геометрическое распределение" />
+
+                <Button
+                    android:id="@+id/btn_posob_puass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="0dp"
+                    android:text="Распределение Пуассона" />
+
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
