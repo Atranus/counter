@@ -30,14 +30,16 @@
                 android:hint="A"
                 android:inputType="numberDecimal|numberSigned"
                 android:minWidth="40dp"
-                android:textSize="30dp" />
+                android:textSize="30dp"
+                android:textColor="@color/text_formula" />
 
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="x⁴+"
-                android:textSize="30dp" />
+                android:textSize="30dp"
+                android:textColor="@color/text_formula" />
 
             <EditText
                 android:id="@+id/et_b"
@@ -47,13 +49,15 @@
                 android:hint="B"
                 android:inputType="numberDecimal|numberSigned"
                 android:minWidth="40dp"
-                android:textSize="30dp" />
+                android:textSize="30dp"
+                android:textColor="@color/text_formula" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="x²+"
-                android:textSize="30dp" />
+                android:textSize="30dp"
+                android:textColor="@color/text_formula" />
 
             <EditText
                 android:id="@+id/et_c"
@@ -63,13 +67,15 @@
                 android:hint="C"
                 android:inputType="numberDecimal|numberSigned"
                 android:minWidth="40dp"
-                android:textSize="30dp" />
+                android:textSize="30dp"
+                android:textColor="@color/text_formula" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="="
-                android:textSize="30dp" />
+                android:textSize="30dp"
+                android:textColor="@color/text_formula" />
 
             <EditText
                 android:id="@+id/et_y"
@@ -79,7 +85,8 @@
                 android:hint="0"
                 android:inputType="numberDecimal|numberSigned"
                 android:minWidth="40dp"
-                android:textSize="30dp" />
+                android:textSize="30dp"
+                android:textColor="@color/text_formula" />
 
 
         </LinearLayout>
@@ -90,6 +97,8 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
             android:layout_marginVertical="35dp"
+            android:textColor="@color/text"
+            android:backgroundTint="@color/button"
             android:text="Решить"
             android:textSize="25dp" />
 
@@ -116,14 +125,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="D = "
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textColor="@color/text_formula" />
 
                     <TextView
                         android:id="@+id/d_answer"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=" = "
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textColor="@color/text_formula" />
                 </LinearLayout>
 
                 <HorizontalScrollView
@@ -143,6 +154,7 @@
                             android:id="@+id/x12_lable"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:textColor="@color/text_formula"
                             android:text="X₁₂² = "
                             android:textSize="20dp" />
 
@@ -159,7 +171,8 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="T"
-                                android:textSize="20dp" />
+                                android:textSize="20dp"
+                                android:textColor="@color/text_formula" />
 
                             <View
                                 android:layout_width="match_parent"
@@ -171,7 +184,8 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="TextView"
-                                android:textSize="20dp" />
+                                android:textSize="20dp"
+                                android:textColor="@color/text_formula" />
 
                         </LinearLayout>
 
@@ -180,7 +194,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text=" = "
-                            android:textSize="20dp" />
+                            android:textSize="20dp"
+                            android:textColor="@color/text_formula" />
 
                         <TextView
                             android:id="@+id/x12_side"
@@ -188,7 +203,8 @@
                             android:layout_height="wrap_content"
                             android:text="---"
                             android:textSize="20dp"
-                            android:visibility="visible" />
+                            android:visibility="visible"
+                            android:textColor="@color/text_formula" />
 
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -202,7 +218,8 @@
                                 android:layout_margin="5dp"
                                 android:text="X₁ = "
                                 android:textSize="20dp"
-                                android:visibility="visible" />
+                                android:visibility="visible"
+                                android:textColor="@color/text_formula" />
 
                             <TextView
                                 android:id="@+id/x2"
@@ -211,7 +228,8 @@
                                 android:layout_margin="5dp"
                                 android:text="X₂ = "
                                 android:textSize="20dp"
-                                android:visibility="visible" />
+                                android:visibility="visible"
+                                android:textColor="@color/text_formula" />
                         </LinearLayout>
                     </LinearLayout>
                 </HorizontalScrollView>
@@ -234,7 +252,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="X₃₄² = "
-                            android:textSize="20dp" />
+                            android:textSize="20dp"
+                            android:textColor="@color/text_formula" />
 
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -249,7 +268,8 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="T"
-                                android:textSize="20dp" />
+                                android:textSize="20dp"
+                                android:textColor="@color/text_formula" />
 
                             <View
                                 android:layout_width="match_parent"
@@ -261,7 +281,8 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="TextView"
-                                android:textSize="20dp" />
+                                android:textSize="20dp"
+                                android:textColor="@color/text_formula" />
 
                         </LinearLayout>
 
@@ -270,7 +291,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text=" = "
-                            android:textSize="20dp" />
+                            android:textSize="20dp"
+                            android:textColor="@color/text_formula" />
 
                         <TextView
                             android:id="@+id/x34_side"
@@ -278,7 +300,8 @@
                             android:layout_height="wrap_content"
                             android:text="---"
                             android:textSize="20dp"
-                            android:visibility="visible" />
+                            android:visibility="visible"
+                            android:textColor="@color/text_formula" />
 
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -292,7 +315,8 @@
                                 android:layout_margin="5dp"
                                 android:text="X₃ = "
                                 android:textSize="20dp"
-                                android:visibility="visible" />
+                                android:visibility="visible"
+                                android:textColor="@color/text_formula" />
 
                             <TextView
                                 android:id="@+id/x4"
@@ -301,7 +325,8 @@
                                 android:layout_margin="5dp"
                                 android:text="X₄ = "
                                 android:textSize="20dp"
-                                android:visibility="visible" />
+                                android:visibility="visible"
+                                android:textColor="@color/text_formula" />
                         </LinearLayout>
                     </LinearLayout>
                 </HorizontalScrollView>
@@ -312,7 +337,8 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:textSize="25dp"
-                    android:visibility="gone" />
+                    android:visibility="gone"
+                    android:textColor="@color/text_formula" />
 
             </LinearLayout>
         </ScrollView>

@@ -25,7 +25,7 @@ class SqareEquation : AppCompatActivity() {
                 val A = if (etA.text.isNotEmpty()) etA.text.toString().toFloat() else 1F
                 val B = if (etB.text.isNotEmpty()) etB.text.toString().toFloat()  else 1F
                 val y = if (etY.text.isNotEmpty()) etY.text.toString().toFloat()  else 0F
-                val C = if (etC.text.isNotEmpty()) etC.text.toString().toFloat()  else 0F  - y
+                val C = (if (etC.text.isNotEmpty()) etC.text.toString().toFloat()  else 0F) - y
 
                 val D = (B*B - 4*A*C)
 

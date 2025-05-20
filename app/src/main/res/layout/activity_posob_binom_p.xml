@@ -25,13 +25,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="p"
-                android:textSize="30dp" />
+                android:textSize="30dp"
+                android:textColor="@color/text_formula" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=" = "
-                android:textSize="30dp" />
+                android:textSize="30dp"
+                android:textColor="@color/text_formula" />
 
             <EditText
                 android:id="@+id/et_plittle"
@@ -41,7 +43,8 @@
                 android:hint="p"
                 android:inputType="numberDecimal"
                 android:minWidth="40dp"
-                android:textSize="30dp" />
+                android:textSize="30dp"
+                android:textColor="@color/text_formula" />
         </LinearLayout>
 
         <LinearLayout
@@ -55,7 +58,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="P"
-                android:textSize="30dp" />
+                android:textSize="30dp"
+                android:textColor="@color/text_formula" />
 
             <EditText
                 android:id="@+id/et_n"
@@ -66,13 +70,15 @@
                 android:hint="n"
                 android:inputType="number"
                 android:minWidth="20dp"
-                android:textSize="15dp"/>
+                android:textSize="15dp"
+                android:textColor="@color/text_formula"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="("
-                android:textSize="30dp" />
+                android:textSize="30dp"
+                android:textColor="@color/text_formula" />
 
             <EditText
                 android:id="@+id/et_k"
@@ -82,13 +88,15 @@
                 android:hint="k"
                 android:inputType="number"
                 android:minWidth="40dp"
-                android:textSize="30dp" />
+                android:textSize="30dp"
+                android:textColor="@color/text_formula" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=")"
-                android:textSize="30dp" />
+                android:textSize="30dp"
+                android:textColor="@color/text_formula" />
         </LinearLayout>
 
         <Button
@@ -97,6 +105,8 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
             android:layout_marginVertical="35dp"
+            android:textColor="@color/text"
+            android:backgroundTint="@color/button"
             android:text="Решить"
             android:textSize="25dp" />
 
@@ -122,7 +132,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="C"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textColor="@color/text_formula" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -137,7 +148,8 @@
                             android:hint="m"
                             android:inputType="number"
                             android:minWidth="10dp"
-                            android:textSize="10dp"/>
+                            android:textSize="10dp"
+                            android:textColor="@color/text_formula"/>
                         <TextView
                             android:id="@+id/tv_c_n"
                             android:layout_width="wrap_content"
@@ -147,14 +159,16 @@
                             android:hint="n"
                             android:inputType="number"
                             android:minWidth="10dp"
-                            android:textSize="10dp"/>
+                            android:textSize="10dp"
+                            android:textColor="@color/text_formula"/>
                     </LinearLayout>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=" = "
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textColor="@color/text_formula" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -169,7 +183,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="T"
-                            android:textSize="20dp" />
+                            android:textSize="20dp"
+                            android:textColor="@color/text_formula" />
 
                         <View
                             android:layout_width="match_parent"
@@ -181,7 +196,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="TextView"
-                            android:textSize="20dp" />
+                            android:textSize="20dp"
+                            android:textColor="@color/text_formula" />
 
                     </LinearLayout>
 
@@ -190,7 +206,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=" = "
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textColor="@color/text_formula" />
 
                 </LinearLayout>
             </HorizontalScrollView>>
@@ -212,7 +229,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="P"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textColor="@color/text_formula" />
 
                     <TextView
                         android:id="@+id/tv_p_n"
@@ -223,13 +241,15 @@
                         android:hint="n"
                         android:inputType="number"
                         android:minWidth="10dp"
-                        android:textSize="10dp"/>
+                        android:textSize="10dp"
+                        android:textColor="@color/text_formula"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="("
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textColor="@color/text_formula" />
 
                     <TextView
                         android:id="@+id/tv_p_k"
@@ -239,25 +259,29 @@
                         android:hint="k"
                         android:inputType="number"
                         android:minWidth="20dp"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textColor="@color/text_formula" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=")"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textColor="@color/text_formula" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=" = "
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textColor="@color/text_formula" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="C"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textColor="@color/text_formula" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -272,7 +296,8 @@
                             android:hint="m"
                             android:inputType="number"
                             android:minWidth="10dp"
-                            android:textSize="10dp"/>
+                            android:textSize="10dp"
+                            android:textColor="@color/text_formula"/>
                         <TextView
                             android:id="@+id/tv_pc_n"
                             android:layout_width="wrap_content"
@@ -282,21 +307,24 @@
                             android:hint="n"
                             android:inputType="number"
                             android:minWidth="10dp"
-                            android:textSize="10dp"/>
+                            android:textSize="10dp"
+                            android:textColor="@color/text_formula"/>
                     </LinearLayout>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=" · "
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textColor="@color/text_formula" />
 
                     <TextView
                         android:id="@+id/tv_p_p"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:hint="p"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textColor="@color/text_formula" />
 
                     <TextView
                         android:id="@+id/tv_p_p_k"
@@ -307,20 +335,23 @@
                         android:hint="k"
                         android:inputType="number"
                         android:minWidth="10dp"
-                        android:textSize="10dp"/>
+                        android:textSize="10dp"
+                        android:textColor="@color/text_formula"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=" · "
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textColor="@color/text_formula" />
 
                     <TextView
                         android:id="@+id/tv_p_q"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:hint="q"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textColor="@color/text_formula" />
 
                     <TextView
                         android:id="@+id/tv_p_q_nk"
@@ -331,14 +362,16 @@
                         android:hint="n-k"
                         android:inputType="number"
                         android:minWidth="10dp"
-                        android:textSize="10dp"/>
+                        android:textSize="10dp"
+                        android:textColor="@color/text_formula"/>
 
                     <TextView
                         android:id="@+id/tv_p_result"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=" = "
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textColor="@color/text_formula" />
                 </LinearLayout>
             </HorizontalScrollView>
 
@@ -359,7 +392,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="M(x) = "
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textColor="@color/text_formula" />
 
                     <TextView
                         android:id="@+id/tv_m"
@@ -369,7 +403,8 @@
                         android:hint="m"
                         android:inputType="number"
                         android:minWidth="20dp"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textColor="@color/text_formula" />
 
 
                 </LinearLayout>
@@ -392,7 +427,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="D(x) = "
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textColor="@color/text_formula" />
 
                     <TextView
                         android:id="@+id/tv_d"
@@ -402,7 +438,8 @@
                         android:hint="d"
                         android:inputType="number"
                         android:minWidth="20dp"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textColor="@color/text_formula" />
 
 
                 </LinearLayout>
@@ -426,14 +463,16 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
                         android:text="σ(x) = "
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textColor="@color/text_formula" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
                         android:text="√"
-                        android:textSize="28dp" />
+                        android:textSize="28dp"
+                        android:textColor="@color/text_formula" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -452,7 +491,8 @@
                             android:hint="Dx"
                             android:inputType="number"
                             android:minWidth="20dp"
-                            android:textSize="20dp" />
+                            android:textSize="20dp"
+                            android:textColor="@color/text_formula" />
                     </LinearLayout>
 
                     <TextView
@@ -464,7 +504,8 @@
                         android:text=" = "
                         android:inputType="number"
                         android:minWidth="20dp"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textColor="@color/text_formula" />
 
                 </LinearLayout>
             </HorizontalScrollView>

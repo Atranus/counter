@@ -88,6 +88,8 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
             android:layout_marginVertical="35dp"
+            android:textColor="@color/text"
+            android:backgroundTint="@color/button"
             android:text="Решить"
             android:textSize="25dp" />
 

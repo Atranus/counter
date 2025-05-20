@@ -30,13 +30,15 @@
                 android:hint="x"
                 android:inputType="numberDecimal|numberSigned"
                 android:minWidth="40dp"
-                android:textSize="30dp" />
+                android:textSize="30dp"
+                android:textColor="@color/text_formula" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="mod("
-                android:textSize="30dp" />
+                android:textSize="30dp"
+                android:textColor="@color/text_formula" />
 
             <EditText
                 android:id="@+id/et_m"
@@ -46,13 +48,15 @@
                 android:hint="m"
                 android:inputType="numberDecimal"
                 android:minWidth="40dp"
-                android:textSize="30dp" />
+                android:textSize="30dp"
+                android:textColor="@color/text_formula" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=")"
-                android:textSize="30dp" />
+                android:textSize="30dp"
+                android:textColor="@color/text_formula" />
         </LinearLayout>
 
         <Button
@@ -61,6 +65,8 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
             android:layout_marginVertical="35dp"
+            android:textColor="@color/text"
+            android:backgroundTint="@color/button"
             android:text="Решить"
             android:textSize="25dp" />
 
@@ -70,7 +76,8 @@
             android:layout_height="wrap_content"
             android:hint=""
             android:textSize="25dp"
-            android:layout_marginHorizontal="15dp"/>
+            android:layout_marginHorizontal="15dp"
+            android:textColor="@color/text_formula"/>
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
