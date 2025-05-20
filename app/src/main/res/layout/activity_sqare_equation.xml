@@ -158,7 +158,7 @@
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
-                            android:background="@color/black" />
+                            android:background="@color/line" />
 
                         <TextView
                             android:id="@+id/x1_down"
@@ -210,7 +210,7 @@
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
-                            android:background="@color/black" />
+                            android:background="@color/line" />
 
                         <TextView
                             android:id="@+id/x2_down"

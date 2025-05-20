@@ -1,6 +1,7 @@
 package com.example.counter
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -8,6 +9,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.counter.databinding.ActivityModulBinding
 import com.example.counter.databinding.ActivityPosobBinomPBinding
+import kotlin.math.log
 import kotlin.math.pow
 import kotlin.math.sqrt
 
@@ -15,7 +17,11 @@ class PosobBinomP : AppCompatActivity() {
 
     fun factorial(num: Int): Long {
         var result = 1L
-        for (i in 2..num) result *= i
+        for (i in 2..num) {
+            result *= i
+
+            Log.i("Число", result.toString())
+        }
         return result
     }
 
@@ -35,7 +41,7 @@ class PosobBinomP : AppCompatActivity() {
                 llSigm.setVisibility(View.GONE)
 
                 val n = if (etN.text.isNotEmpty()) etN.text.toString().toInt() else 1
-                val k = if (etK.text.isNotEmpty() or (etK.text.toString().toInt() > n)) etK.text.toString().toInt() else 1
+                val k = if (etK.text.isNotEmpty() or (etK.text.toString().toInt() < n)) etK.text.toString().toInt() else 1
                 val p = if (etPlittle.text.isNotEmpty()) etPlittle.text.toString().toFloat() else 0.5F
 
                 tvCM.text = "$k"

@@ -96,6 +96,7 @@
                     android:text="Распределение Пуассона" />
 
             </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

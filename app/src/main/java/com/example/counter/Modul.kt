@@ -24,7 +24,7 @@ class Modul : AppCompatActivity() {
 
                 if (etM.text.isEmpty()) {etM.setText("10")}
 
-                tvAnswer.text = "${x}mod($m)=${x%m}mod($m)"
+                tvAnswer.text = "${x} mod($m) = ${x%m} mod($m)"
             }
         }
     }

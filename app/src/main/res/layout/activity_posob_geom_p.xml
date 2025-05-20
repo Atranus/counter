@@ -239,7 +239,7 @@
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
-                            android:background="@color/black" />
+                            android:background="@color/line" />
                         <TextView
                             android:id="@+id/tv_m_p"
                             android:layout_width="wrap_content"
@@ -297,7 +297,7 @@
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
-                            android:background="@color/black" />
+                            android:background="@color/line" />
                         <TextView
                             android:id="@+id/tv_d_p"
                             android:layout_width="wrap_content"
@@ -356,7 +356,7 @@
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="2dp"
-                            android:background="@color/black" />
+                            android:background="@color/line" />
                         <TextView
                             android:id="@+id/tv_sigm_dx"
                             android:layout_width="wrap_content"
