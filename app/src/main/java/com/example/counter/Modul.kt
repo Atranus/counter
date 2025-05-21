@@ -19,12 +19,15 @@ class Modul : AppCompatActivity() {
         setContentView(binding.root)
         with(binding){
             btAnswer.setOnClickListener {
-                val x = if (etX.text.isNotEmpty()) etX.text.toString().toInt() else 1
-                val m = if (etM.text.isNotEmpty()) etM.text.toString().toInt() else 10
+                val x = if (etX.text.isNotEmpty()) etX.text.toString().toLong() else 1.toLong()
+                val m = if (etM.text.isNotEmpty()) etM.text.toString().toLong() else 10.toLong()
 
                 if (etM.text.isEmpty()) {etM.setText("10")}
 
+                if (m!= 0.toLong()){
                 tvAnswer.text = "${x} mod($m) = ${x%m} mod($m)"
+                }
+                else tvAnswer.text = "Невозможно взять модуль числа при m = 0"
             }
         }
     }
