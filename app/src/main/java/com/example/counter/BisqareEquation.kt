@@ -21,7 +21,7 @@ class BisqareEquation : AppCompatActivity() {
         setContentView(binding.root)
         with(binding){
             btAnswer.setOnClickListener {
-                val A = if (etA.text.isNotEmpty()) etA.text.toString().toFloat() else 1F
+                val A = if ((etA.text.isNotEmpty())) etA.text.toString().toFloat() else 1F
                 val B = if (etB.text.isNotEmpty()) etB.text.toString().toFloat()  else 1F
                 val y = if (etY.text.isNotEmpty()) etY.text.toString().toFloat()  else 0F
                 val C = (if (etC.text.isNotEmpty()) etC.text.toString().toFloat()  else 0F) - y
@@ -138,6 +138,14 @@ class BisqareEquation : AppCompatActivity() {
                 {
                     tvAnswer.setVisibility(View.VISIBLE)
                     tvAnswer.text = "Корней нет"
+                }
+
+                if (A == 0F){
+                    x12.setVisibility(View.GONE)
+                    x34.setVisibility(View.GONE)
+                    d.setVisibility(View.GONE)
+                    tvAnswer.text = "А ≠ 0"
+                    tvAnswer.setVisibility(View.VISIBLE)
                 }
             }
         }

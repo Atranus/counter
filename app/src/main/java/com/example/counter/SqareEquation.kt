@@ -62,6 +62,14 @@ class SqareEquation : AppCompatActivity() {
                         tvAnswer.text = "Корней нет"
                     }
                 }
+
+                if (A == 0F){
+                    x1.setVisibility(View.GONE)
+                    x2.setVisibility(View.GONE)
+                    d.setVisibility(View.GONE)
+                    tvAnswer.text = "А ≠ 0"
+                    tvAnswer.setVisibility(View.VISIBLE)
+                }
             }
         }
     }

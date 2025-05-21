@@ -34,9 +34,16 @@ class PosobPuassP : AppCompatActivity() {
                 llD.setVisibility(View.GONE)
                 llM.setVisibility(View.GONE)
                 llSigm.setVisibility(View.GONE)
+                tvAnswer.setVisibility(View.GONE)
 
                 val n = if (etN.text.isNotEmpty()) etN.text.toString().toInt() else 1
-                val k = if (etK.text.isNotEmpty() or (etK.text.toString().toInt() > n)) etK.text.toString().toInt() else 1
+                val k = if (etK.text.isNotEmpty()) {
+                    if (etK.text.toString().toInt() < n) {
+                        etK.text.toString().toInt()
+                    }
+                    else 1
+                }
+                else 1
                 val p = if (etPlittle.text.isNotEmpty()) etPlittle.text.toString().toFloat() else 0.5F
 
                 val lambda = n*p
@@ -73,6 +80,16 @@ class PosobPuassP : AppCompatActivity() {
                 llD.setVisibility(View.VISIBLE)
                 llM.setVisibility(View.VISIBLE)
                 llSigm.setVisibility(View.VISIBLE)
+
+                if (!((p > 0F) && (p < 1F))){
+                    llLmbda.setVisibility(View.GONE)
+                    llP.setVisibility(View.GONE)
+                    llD.setVisibility(View.GONE)
+                    llM.setVisibility(View.GONE)
+                    llSigm.setVisibility(View.GONE)
+                    tvAnswer.text = "p принимает только значения от 0 до 1"
+                    tvAnswer.setVisibility(View.VISIBLE)
+                }
             }
         }
 
