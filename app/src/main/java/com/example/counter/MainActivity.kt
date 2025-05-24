@@ -5,9 +5,10 @@ import android.os.Bundle
 import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.counter.databinding.ActivityMainBinding
+import com.example.counter.posobility.PosobBinomP
+import com.example.counter.posobility.PosobGeomP
+import com.example.counter.posobility.PosobPuassP
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -17,36 +18,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         enableEdgeToEdge()
         setContentView(binding.root)
-        with(binding){
-            btnSqareEquation.setOnClickListener {
-                startActivity(Intent(this@MainActivity,SqareEquation::class.java))
-            }
-            btnBisqareEquation.setOnClickListener {
-                startActivity(Intent(this@MainActivity,BisqareEquation::class.java))
-            }
-            btnModul.setOnClickListener {
-                startActivity(Intent(this@MainActivity,Modul::class.java))
-            }
 
-            btnPosob.setOnClickListener {
-                if (llPosob.visibility == View.GONE) {
-                    btnPosob.text = "∧ Формулы по теории вероятности"
-                    llPosob.setVisibility(View.VISIBLE)
-                }
-                else{
-                    btnPosob.text = "∨ Формулы по теории вероятности"
-                    llPosob.setVisibility(View.GONE)
-                }
-            }
-            btnPosobBinom.setOnClickListener {
-                startActivity(Intent(this@MainActivity,PosobBinomP::class.java))
-            }
-            btnPosobGeom.setOnClickListener {
-                startActivity(Intent(this@MainActivity,PosobGeomP::class.java))
-            }
-            btnPosobPuass.setOnClickListener {
-                startActivity(Intent(this@MainActivity,PosobPuassP::class.java))
-            }
-        }
+
     }
 }

@@ -1,12 +1,9 @@
-package com.example.counter
+package com.example.counter.posobility
 
 import android.os.Bundle
 import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.example.counter.databinding.ActivityPosobBinomPBinding
 import com.example.counter.databinding.ActivityPosobGeomPBinding
 import kotlin.math.pow
 import kotlin.math.sqrt

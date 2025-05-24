@@ -13,13 +13,13 @@
         android:theme="@style/Theme.Counter"
         tools:targetApi="31">
         <activity
-            android:name=".PosobPuassP"
+            android:name=".posobility.PosobPuassP"
             android:exported="false" />
         <activity
-            android:name=".PosobGeomP"
+            android:name=".posobility.PosobGeomP"
             android:exported="false" />
         <activity
-            android:name=".PosobBinomP"
+            android:name=".posobility.PosobBinomP"
             android:exported="false" />
         <activity
             android:name=".Modul"

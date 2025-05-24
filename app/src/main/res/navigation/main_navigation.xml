@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/mainFragment">
+
+    <activity
+        android:id="@+id/sqareEquation"
+        android:name="com.example.counter.SqareEquation"
+        android:label="activity_sqare_equation"
+        tools:layout="@layout/activity_sqare_equation" />
+    <activity
+        android:id="@+id/bisqareEquation"
+        android:name="com.example.counter.BisqareEquation"
+        android:label="activity_bisqare_equation"
+        tools:layout="@layout/activity_bisqare_equation" />
+    <activity
+        android:id="@+id/modul"
+        android:name="com.example.counter.Modul"
+        android:label="activity_modul"
+        tools:layout="@layout/activity_modul" />
+    <activity
+        android:id="@+id/posobBinomP"
+        android:name="com.example.counter.posobility.PosobBinomP"
+        android:label="activity_posob_binom_p"
+        tools:layout="@layout/activity_posob_binom_p" />
+    <activity
+        android:id="@+id/posobGeomP"
+        android:name="com.example.counter.posobility.PosobGeomP"
+        android:label="activity_posob_geom_p"
+        tools:layout="@layout/activity_posob_geom_p" />
+    <activity
+        android:id="@+id/posobPuassP"
+        android:name="com.example.counter.posobility.PosobPuassP"
+        android:label="activity_posob_puass_p"
+        tools:layout="@layout/activity_posob_puass_p" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.counter.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_sqareEquation"
+            app:destination="@id/sqareEquation" />
+        <action
+            android:id="@+id/action_mainFragment_to_bisqareEquation"
+            app:destination="@id/bisqareEquation" />
+        <action
+            android:id="@+id/action_mainFragment_to_modul"
+            app:destination="@id/modul" />
+        <action
+            android:id="@+id/action_mainFragment_to_posobBinomP"
+            app:destination="@id/posobBinomP" />
+        <action
+            android:id="@+id/action_mainFragment_to_posobGeomP"
+            app:destination="@id/posobGeomP" />
+        <action
+            android:id="@+id/action_mainFragment_to_posobPuassP"
+            app:destination="@id/posobPuassP" />
+    </fragment>
+</navigation>
